@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Act.SearchUpdate">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/pinkColor"
+            app:titleTextColor="@color/design_default_color_background"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/back"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="13dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/back_arrow"
+            android:tint="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="80px"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="50dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="Issue Update"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="10dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:enabled="false"
+                        android:hint="Issue Id"
+                        app:boxStrokeColor="#4E4A4A"
+                        app:boxStrokeWidth="1dp"
+                        app:hintTextColor="#4E4A4A"
+                        app:shapeAppearanceOverlay="@style/Button4">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/inputId"
+                            style="@style/modifiedEditText"
+                            android:enabled="false"
+                            android:inputType="text"
+                            android:textColor="@color/pinkColor"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:enabled="false"
+                        android:hint="User Id"
+                        app:boxStrokeColor="#4E4A4A"
+                        app:boxStrokeWidth="1dp"
+                        app:hintTextColor="#4E4A4A"
+                        app:shapeAppearanceOverlay="@style/Button4">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/inputUid"
+                            style="@style/modifiedEditText"
+                            android:enabled="false"
+                            android:inputType="numberDecimal"
+                            android:maxLength="10"
+                            android:textColor="@color/pinkColor"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:enabled="false"
+                        android:hint="User Name"
+                        app:boxStrokeColor="#4E4A4A"
+                        app:boxStrokeWidth="1dp"
+                        app:hintTextColor="#4E4A4A"
+                        app:shapeAppearanceOverlay="@style/Button4">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/inputUName"
+                            style="@style/modifiedEditText"
+                            android:enabled="false"
+                            android:inputType="text"
+                            android:lines="3"
+                            android:textColor="@color/pinkColor"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:enabled="false"
+                        android:hint="Issue"
+                        app:boxStrokeColor="#4E4A4A"
+                        app:boxStrokeWidth="1dp"
+                        app:hintTextColor="#4E4A4A"
+                        app:shapeAppearanceOverlay="@style/Button4">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/inputIssue"
+                            style="@style/modifiedEditText"
+                            android:enabled="false"
+                            android:inputType="text"
+                            android:lines="3"
+                            android:textColor="@color/pinkColor"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:enabled="false"
+                        android:hint="Issue Description"
+                        app:boxStrokeColor="#4E4A4A"
+                        app:boxStrokeWidth="1dp"
+                        app:hintTextColor="#4E4A4A"
+                        app:shapeAppearanceOverlay="@style/Button4">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/inputIssueDescription"
+                            style="@style/modifiedEditText"
+                            android:enabled="false"
+                            android:inputType="textAutoComplete"
+                            android:maxLines="1"
+                            android:textColor="@color/pinkColor"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:enabled="false"
+                        android:hint="Asset iD"
+                        app:boxStrokeColor="#4E4A4A"
+                        app:boxStrokeWidth="1dp"
+                        app:hintTextColor="#4E4A4A"
+                        app:shapeAppearanceOverlay="@style/Button4">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/inputAid"
+                            style="@style/modifiedEditText"
+                            android:enabled="false"
+                            android:inputType="numberDecimal"
+                            android:maxLength="10"
+                            android:textColor="@color/pinkColor"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:enabled="false"
+                        android:hint="Asset Name"
+                        app:boxStrokeColor="#4E4A4A"
+                        app:boxStrokeWidth="1dp"
+                        app:hintTextColor="#4E4A4A"
+                        app:shapeAppearanceOverlay="@style/Button4">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/inputAName"
+                            style="@style/modifiedEditText"
+                            android:enabled="false"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/pinkColor"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:enabled="false"
+                        android:hint="Asset Type"
+                        app:boxStrokeColor="#4E4A4A"
+                        app:boxStrokeWidth="1dp"
+                        app:hintTextColor="#4E4A4A"
+                        app:shapeAppearanceOverlay="@style/Button4">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/inputATyoe"
+                            style="@style/modifiedEditText"
+                            android:enabled="false"
+                            android:inputType="textAutoComplete"
+                            android:maxLines="1"
+                            android:textColor="@color/pinkColor"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/backgroundbox"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="28dp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="center"
+                            android:text=" Order Status :"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtLocation"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_centerInParent="true"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                        <Spinner
+                            android:id="@+id/spnLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:hint="Remarks"
+                        app:boxStrokeColor="#4E4A4A"
+                        app:boxStrokeWidth="1dp"
+                        app:hintTextColor="#4E4A4A"
+                        app:shapeAppearanceOverlay="@style/Button4">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/inputRemarks"
+                            style="@style/modifiedEditText"
+                            android:inputType="textAutoComplete"
+                            android:maxLines="1"
+                            android:textColor="@color/pinkColor"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                        android:id="@+id/btnSubmit"
+                        style="@style/loginButton"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/loginViewsMargin"
+                        android:background="@drawable/button_background_blue"
+                        android:text="Submit"
+                        app:initialCornerAngle="27dp"
+                        app:spinning_bar_color="#FFF"
+                        app:spinning_bar_padding="6dp"
+                        app:spinning_bar_width="4dp" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

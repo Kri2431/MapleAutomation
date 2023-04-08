@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="150px"
+    android:layout_height="150px"
+    android:minWidth="50dp"
+    app:cardCornerRadius="4dp"
+    app:cardMaxElevation="4dp"
+    app:cardElevation="4dp"
+    android:background="@color/transparent"
+    android:id="@+id/card_background">
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/pinkColor"
+        android:id="@+id/spin_view" />
+
+</LinearLayout>

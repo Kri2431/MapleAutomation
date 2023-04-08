@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_Issue"
+        android:icon="@drawable/issue"
+        android:title="Isuue" />
+
+    <item
+        android:id="@+id/nav_Attendance"
+        android:icon="@drawable/attendance"
+        android:title="Attendance" />
+
+    <item
+        android:id="@+id/nav_Leave"
+        android:icon="@drawable/a_report"
+        android:title="Apply Leave" />
+
+    <item
+        android:id="@+id/nav_Profile"
+        android:icon="@drawable/profile"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/nav_Support"
+        android:icon="@drawable/supt"
+        android:title="Support" />
+
+    <item
+        android:id="@+id/nav_year"
+        android:icon="@drawable/year"
+        android:title="Change Year" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/m_logout"
+        android:title="LogOut" />
+
+
+</menu>

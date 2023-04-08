@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "15350613687",
+    "project_id": "maple-automation",
+    "storage_bucket": "maple-automation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15350613687:android:9be2cc7e678bcd52aaaf32",
+        "android_client_info": {
+          "package_name": "com.inficta.alokitsupport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15350613687-qa89mk3bj4iqtp8jp92ro5gfd64tapvi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.inficta.alokitsupport",
+            "certificate_hash": "151380205def022a9cf277d0e3fea2b469fafeda"
+          }
+        },
+        {
+          "client_id": "15350613687-h7uq4dhi0ndge6gs80067bqk2mu5u5e4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxFXvYtSWRqgrlQk5Ob-96wybQoaZ7oWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15350613687-h7uq4dhi0ndge6gs80067bqk2mu5u5e4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.inficta.alokitsupport">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/al_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/al_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MapleAutomation"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Act.PreviousLeave"
+            android:exported="false" />
+        <activity
+            android:name=".Act.AttendanceReport"
+            android:exported="false" />
+        <activity
+            android:name=".Act.ApplyLeave"
+            android:exported="true" />
+        <activity
+            android:name=".Act.Year"
+            android:exported="true" />
+        <activity
+            android:name=".Act.SearchUpdate"
+            android:exported="true" />
+        <activity
+            android:name=".Act.Support"
+            android:exported="true" />
+        <activity
+            android:name=".Act.Profile"
+            android:exported="true" />
+        <activity
+            android:name=".Act.IssueUpdate"
+            android:exported="true" />
+        <activity
+            android:name=".Act.Issue"
+            android:exported="true" />
+        <activity
+            android:name=".Act.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Attendance.Attendance"
+            android:exported="false" />
+        <activity
+            android:name=".Act.NewLoginDesign"
+            android:exported="false" />
+        <activity
+            android:name=".Act.DashBoard"
+            android:exported="false" />
+        <activity
+            android:name=".Act.Splace_Screan"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

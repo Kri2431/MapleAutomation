@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Alok IT Support</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+
+    <string name="log_in">Log In</string>
+
+</resources>

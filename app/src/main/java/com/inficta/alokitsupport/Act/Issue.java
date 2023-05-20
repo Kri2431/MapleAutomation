@@ -63,8 +63,7 @@ public class Issue extends BaseActivity implements IssueAdapter.OnItemClick, Sea
                 }
             }
         });
-
-
+        
         is.edSerch.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {

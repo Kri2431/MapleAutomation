@@ -140,7 +140,7 @@ public class AttendanceReport extends BaseActivity {
                 progressDialog(AttendanceReport.this);
                 stringStringMap.put("engineer_id",preferences.getStringPreference(USER_ID));
                 stringStringMap.put("attdance_month", "" + Type);
-                stringStringMap.put("year", year);
+                    stringStringMap.put("year", year);
                 counterVm.aReport(stringStringMap).observe(AttendanceReport.this, new Observer<AttendanceReportModel>() {
                     @Override
                     public void onChanged(AttendanceReportModel issueModel) {

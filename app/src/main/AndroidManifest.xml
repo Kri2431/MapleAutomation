@@ -18,6 +18,9 @@
         android:theme="@style/Theme.MapleAutomation"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Test"
+            android:exported="false" />
+        <activity
             android:name=".Act.PreviousLeave"
             android:exported="false" />
         <activity
